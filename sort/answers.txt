@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: Poor performace on a random list, but great results on a already sorted list. (0.178s / 0.056s)
+
+sort2 uses: merge sort
+
+How do you know?: It performs undoubtedly the fastest on a random list. (0.067s < 0.126s < 0.178s)
+
+sort3 uses: selection sort
+
+How do you know?: Better performance on a random list than bubble sort. (0.126s < 0.178s (bubble sort))
