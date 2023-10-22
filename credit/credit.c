@@ -35,6 +35,8 @@ bool valid_card(void)
         CN /= 10;
     }
 
+    printf("%i", finalSum);
+
     if (finalSum % 10 != 0)
         return false;
 
