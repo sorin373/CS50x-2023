@@ -1,0 +1,11 @@
+1. If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+    I would describe a listener's aura by looking into what were the top genres and songs in 2018.
+
+2. Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+    This measurement would not be that effective because:
+        a. the data involved is only from 2018. Having more data to analyse would undoubtedly provide a better pattern in a listener's preference in music.
+        b. the data might not be influenced only by one person and this can lead to imprecise result. (Collaborative Listening)
+        c. the data does not present any details about the listener which is key in finding out musical taste.
+
+    As far as my concerned, brodening the database with datasets from several years, analysing streaming history and differentiating the listener's personal choices
+    from the ones influenced by collaborating with others would help us improve our aura analysis.
