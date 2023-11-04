@@ -1,0 +1,142 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    scroll-behavior: smooth;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #3a3838;
+}
+
+*:focus {
+    outline: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes smooth-appear {
+    to {
+        bottom: 5rem;
+        opacity: 1;
+    }
+}
+
+#i-container {
+    position: fixed;
+    width: 100%;
+    max-width: 1250px;
+    height: 100%;
+    max-height: 600px;
+    margin: 0rem;
+    padding: 2rem;
+    background: rgb(48, 10, 36);
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 20pt;
+    line-height: 30px;
+    bottom: -100%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    animation: smooth-appear 1.0s ease forwards;
+    overflow-y: visible;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+}
+
+#i-container::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes blinkCursor {
+
+    0%,
+    100% {
+        visibility: visible;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+}
+
+#typing-cursor {
+    display: inline-block;
+    visibility: visible;
+    animation: blinkCursor 0.7s infinite;
+    font-weight: 800;
+    font-size: 15pt;
+}
+
+#terminal {
+    margin: auto;
+    padding: 0;
+    max-width: 100%;
+}
+
+#terminal-output {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 20pt;
+}
+
+#terminal-input {
+    background: rgb(48, 10, 36);
+    border-style: none;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 20pt;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.dollar-sign {
+    color: white;
+}
+
+@media (max-width: 720px) {
+
+    @keyframes smooth-appear {
+        to {
+            bottom: 15rem;
+            opacity: 1;
+        }
+    }
+
+    #i-container {
+        font-size: 12pt;
+        line-height: 15px;
+        max-width: 500px;
+        max-height: 20rem;
+        margin: auto;
+    }
+
+    #terminal-output {
+        font-size: 12pt;
+    }
+
+    #terminal-input {
+        font-size: 12pt;
+    }
+}

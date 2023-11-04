@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+                // TODO 1
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function() {
+                    correct.style.background = '#008000';
+                    document.querySelector('#fed1_correct').style.display = 'block';
+                    document.querySelector('#fed1_wrong').style.display = 'none';
+                });
+
+                let wrong = document.querySelectorAll('.wrong');
+                for (let i = 0; i < wrong.length; i++) {
+                    wrong[i].addEventListener('click', function() {
+                        wrong[i].style.background = '#FF0000';
+                        document.querySelector('#fed1_wrong').style.display = 'block';
+                        document.querySelector('#fed1_correct').style.display = 'none';
+                    });
+                }
+
+                // TODO 2
+                document.querySelector('#btn').addEventListener('click', function() {
+                    let getInput = document.querySelector('#input');
+                    let answer = 'Romania'
+                    if (input.value.toUpperCase() === answer.toUpperCase()) {
+                        getInput.style.background = '#008000'
+                        document.querySelector('#fed2_correct').style.display = 'block';
+                        document.querySelector('#fed2_wrong').style.display = 'none';
+                    }
+                    else {
+                        getInput.style.background = '#FF0000';
+                        document.querySelector('#fed2_wrong').style.display = 'block';
+                        document.querySelector('#fed2_correct').style.display = 'none';
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the capital of Romania?</h3>
+                <button class="correct">Bucharest</button>
+                <button class="wrong">Constanța</button>
+                <button class="wrong">Sofia</button>
+                <p id="fed1_correct">Correct!</p>
+                <p id="fed1_wrong">Incorrect!</p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is Bucharest the capital of?</h3>
+                <input type="text" id="input">
+                <button id="btn">Answer</button>
+                <p id="fed2_correct">Correct!</p>
+                <p id="fed2_wrong">Incorrect!</p>
+            </div>
+        </div>
+    </body>
+
+</html>

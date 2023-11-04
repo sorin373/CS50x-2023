@@ -1,0 +1,67 @@
+#container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+#s-container {
+    width: 100%;
+    max-width: 1250px;
+    height: 10rem;
+    max-height: 10rem;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: rgb(48, 10, 36);
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 15pt;
+    line-height: 20px;
+    border-radius: 2rem;
+    overflow-y: visible;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+}
+
+#s-container::-webkit-scrollbar {
+    display: none;
+}
+
+#terminal {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#terminal-output {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 15pt;
+}
+
+#terminal-input {
+    background: rgb(48, 10, 36);
+    border-style: none;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 15pt;
+}
+
+#accordionFlushExample {
+    width: 65%;
+    margin: auto;
+    margin-top: 5rem;
+    font-size: 15pt;
+}
+
+.accordion-header button {
+    font-size: 25pt;
+}
